@@ -21,3 +21,7 @@ def sub(x, y):
     :returns: the substraction of x and y.
     """
     return x - y
+
+
+def mul(x, y):
+    return x * y
