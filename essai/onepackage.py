@@ -7,3 +7,14 @@ def add(x, y):
     :returns: the sum of x and y.
     """
     return x + y
+
+
+def sub(x, y):
+    """
+    Simple substracting function.
+
+    :param x(int|float): first value.
+    :param y(int|float): second value.
+    :returns: the substraction of x and y.
+    """
+    return x - y
