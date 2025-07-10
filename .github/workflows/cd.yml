@@ -1,0 +1,19 @@
+name: test
+
+on:
+  push
+
+
+jobs:
+    update-doc:
+        name: update-doc
+        runs-on: ubuntu-latest
+        permissions:
+          contents: write
+        steps:
+            - name: Send notification to update the documentation
+              uses: peter-evans/repository-dispatch@v3
+              with:
+                  token: ${{ secrets.DOC_PAT }}
+                  repository: Bossy-Romain/EassiWorkflow_Doc
+                  event-type: update_documentation
